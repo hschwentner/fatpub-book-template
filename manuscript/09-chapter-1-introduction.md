@@ -40,7 +40,7 @@ This paragraph references a book. In [@bib:HoferSchwentner2022] you can learn ho
 
 ## Listings
 
-A listing with code follows in[@lst:code-example].
+<!-- A listing with code follows in[@lst:code-example]. -->
 
 Listing: A code example{#lst:code-example}
 
@@ -50,7 +50,7 @@ Listing: A code example{#lst:code-example}
 
 ## Tables
 
-Different formatting for tables is possible; see e.g. [@tbl:example-table].
+<!-- Different formatting for tables is possible; see e.g. [@tbl:example-table]. -->
 
 Table 1.1: Essential and accidental complexity {#tbl:example-table}
 
