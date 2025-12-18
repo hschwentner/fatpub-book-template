@@ -114,7 +114,7 @@ jobs:
             --from=markdown
             --to=docx
             --resource-path=manuscript
-            --metadata-file=manuscript/book-metadata.yaml
+            --metadata-file=manuscript/book-metadata-dpunkt.yaml
             --reference-doc=templates/dpunkt/Vorlage-2019-henning.dotx
             --filter=pandoc-crossref
             --citeproc

@@ -1,0 +1,7 @@
+# CiteProc
+#suppress-bibliography: true   # do not append a bibliography automatically at the end
+reference-section-title: "Bibliography"
+link-citations: true
+## Include items in bibliography that are not cited
+#nocite: |
+#  @bib:Dijkstra1968, @bib:Parnas1972

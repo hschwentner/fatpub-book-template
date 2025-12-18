@@ -1,0 +1,49 @@
+# Basics
+title: '[FatPub Book Example]{custom-style="_fett"}'
+subtitle: '***Writing in Markua and Converting to DOCX***'
+author: '*N. N.*'
+lang: en
+
+toc: true
+toc-title: 'Contents'
+toc-depth: 4
+#number-sections: false
+
+top-level-division: chapter
+
+# Crossref
+# see https://lierdakil.github.io/pandoc-crossref/#customization
+chapters: true
+chaptersDepth: 1
+numberSections: false  # Numbering is done by Microsoft Word
+sectionsDepth: 4
+autoSectionLabels: false
+codeBlockCaptions: true  # Detect "Listing:" as caption
+
+#lofTitle: '# Abbildungsverzeichnis'
+#lotTitle: '# Tabellenverzeichnis'
+#lolTitle: '# Listingverzeichnis'
+
+## Für die Bildunterschriften
+#figureTitle: Abbildung
+#tableTitle: Tabelle
+#listingTitle: Listing
+
+## für Referenzen
+#figPrefix: Abbildung
+#eqnPrefix:
+#  - Gleichung
+#  - Gleichungen
+#tblPrefix: Tabelle
+#lstPrefix: Listing
+#secPrefix:
+#  - Kapitel
+#  - Abschnitt
+#  - Abschnitte
+
+linkReferences: true
+
+# CiteProc
+## Include items in bibliography that are not cited
+#nocite: |
+#  @bib:Dijkstra1968, @bib:Parnas1972

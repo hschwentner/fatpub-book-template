@@ -72,7 +72,7 @@ jobs:
             --to=asciidoc
             --wrap=none
             --resource-path=manuscript
-            --metadata-file=manuscript/book-metadata.yaml
+            --metadata-file=manuscript/book-metadata-oreilly.yaml
             --lua-filter=lib/newpage.lua
             --lua-filter=lib/pandoc-crossref-asciidoc.lua
             --citeproc
