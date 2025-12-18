@@ -1,0 +1,2820 @@
+[
+	{
+		"id": "bib:Adzic2011",
+		"type": "book",
+		"publisher": "Manning",
+        "publisher-place": "Shelter Island, NY",
+		"title": "Specification by Example: How Successful Teams Deliver the Right Software",
+		"language": "en",
+		"author": [
+			{
+				"family": "Adzic",
+				"given": "Gojko"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:AmblerSadalage2006",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+        "publisher-place": "Upper Saddle River, NJ",
+		"title": "Database Refactorings: Evolutionary Database Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Ambler",
+				"given": "Scott W."
+			},
+			{
+				"family": "Sadalage",
+				"given": "Pramod J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:BaasHeimeshoff2021",
+		"type": "article-web",
+		"title": "EventStorming: Emerging Pivotal Events for a Big Picture",
+		"container-title": "Virtual DDD Design Heuristics",
+		"language": "en",
+		"author": [
+			{
+				"family": "Baas-Schwegler",
+				"given": "Kenny"
+			},
+			{
+				"family": "Heimeshoff",
+				"given": "Marco"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+                    "5",
+                    "2"
+				]
+			]
+		},
+		"URL": "https://www.virtualddd.com/heuristics/eventstorming-emerging-pivotal-events-for-a-big-picture"
+	},
+    {
+		"id": "bib:BaasRosa2020",
+		"type": "book",
+		"publisher": "Published by the editors",
+		"title": "Visual Collaboration Tools",
+		"language": "en",
+		"URL": "https://leanpub.com/visualcollaborationtools",
+		"editor": [
+			{
+				"family": "Baas-Schwegler",
+				"given": "Kenny"
+			},
+			{
+				"family": "Rosa",
+				"given": "João"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					"8",
+					"7"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Beck2000",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+        "publisher-place": "Reading, MA",
+		"title": "Extreme Programming Explained: Embrace Change",
+		"language": "en",
+        "edition": "1",
+		"author": [
+			{
+				"family": "Beck",
+				"given": "Kent"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2000"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:BeckAndres2005",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+        "publisher-place": "Boston",
+		"title": "Extreme Programming Explained: Embrace Change",
+		"language": "en",
+        "edition": "2",
+		"author": [
+			{
+				"family": "Beck",
+				"given": "Kent"
+			},
+			{
+				"family": "Andres",
+				"given": "Cynthia"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Beck2024",
+		"type": "book",
+		"publisher": "O’Reilly",
+        "publisher-place": "Sebastopol, CA",
+		"title": "Tidy First?: A Personal Exercise in Empirical Software Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Beck",
+				"given": "Kent"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Brandolini2013",
+		"type": "article-web",
+		"title": "Introducing Event Storming",
+		"container-title": "Ziobrando’s Lair (blog)",
+		"language": "en",
+		"author": [
+			{
+				"family": "Brandolini",
+				"given": "Alberto"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					"11",
+					"18"
+				]
+			]
+		},
+		"URL": "http://ziobrando.blogspot.com/2013/11/introducing-event-storming.html"
+	},
+	{
+		"id": "bib:Brandolini2021",
+		"type": "book",
+		"publisher": "Published by the author",
+		"title": "Introducing EventStorming",
+		"language": "en",
+		"URL": "https://leanpub.com/introducing_eventstorming",
+		"author": [
+			{
+				"family": "Brandolini",
+				"given": "Alberto"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					"2",
+					"12"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Bråten1973",
+		"type": "article-journal",
+		"title": "Model Monopoly and Communications: Systems Theoretical Notes on Democratization",
+		"title-short": "Model Monopoly and Communications",
+		"container-title": "Acta Sociologica",
+		"volume": "16",
+		"issue": "2",
+		"language": "en",
+		"author": [
+			{
+				"family": "Bråten",
+				"given": "Stein"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1973"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Brooks1986",
+		"type": "chapter",
+		"container-title": "The Mythical Man Month: Essays on Software Engineering, Anniversary Edition",
+		"page": "177–203",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston (1995)",
+		"title": "No Silver Bullet: Essence and Accident in Software Engineering",
+		"language": "en",
+		"author": [
+			{
+				"family": "Brooks",
+                "suffix": "Jr.",
+				"given": "Frederick P."
+			}
+		],
+		"editor": [
+			{
+				"family": "Brooks",
+                "suffix": "Jr.",
+				"given": "Frederick P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1986"
+				]
+			]
+		},
+        "URL": "http://www.cs.unc.edu/techreports/86-020.pdf"
+    },
+	{
+		"id": "bib:Brooks1995",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+        "publisher-place": "Boston",
+		"title": "The Mythical Man Month: Essays on Software Engineering, Anniversary Edition",
+		"language": "en",
+ 		"author": [
+			{
+				"family": "Brooks",
+                "suffix": "Jr.",
+				"given": "Frederick P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Brown2023",
+		"type": "book",
+		"publisher": "Published by the author",
+		"title": "The C4 Model for Visualising Software Architecture",
+		"language": "en",
+		"URL": "http://leanpub.com/visualising-software-architecture",
+		"author": [
+			{
+				"family": "Brown",
+				"given": "Simon"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					"2",
+					"24"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:BrownForthcoming",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Santa Rosa, CA",
+		"title": "The C4 Model",
+		"language": "en",
+		"author": [
+			{
+				"family": "Brown",
+				"given": "Simon"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+				]
+			]
+		},
+        "note": "Forthcoming"
+	},
+    {
+		"id": "bib:BuschmannEtAl1996",
+		"type": "book",
+		"publisher": "Wiley",
+		"publisher-place": "New York",
+		"title": "Pattern-Oriented Software Architecture: A System of Patterns",
+		"language": "en",
+		"author": [
+            {
+                "family": "Buschmann",
+                "given": "Frank"
+            },
+			{
+				"family": "Meunier",
+				"given": "Regine"
+			},
+			{
+                "family": "Rohnert",
+				"given": "Hans"
+			},
+            {
+                "family": "Sommerlad",
+                "given": "Peter"
+            },
+            {
+                "family": "Stal",
+                "given": "Michael"
+            }
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:CiceriEtAl2022",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Software Architecture Metrics: Case Studies to Improve the Quality of Your Architecture",
+		"language": "en",
+		"author": [
+			{
+				"family": "Ciceri",
+				"given": "Christian"
+			},
+			{
+				"family": "Farley",
+				"given": "Dave"
+			},
+			{
+				"family": "Ford",
+				"given": "Neal"
+			},
+			{
+				"family": "Harmel-Law",
+				"given": "Andrew"
+			},
+			{
+				"family": "Keeling",
+				"given": "Michael"
+			},
+			{
+				"family": "Lilienthal",
+				"given": "Carola"
+			},
+			{
+				"family": "Rosa",
+				"given": "João"
+			},
+			{
+				"family": "von Zitzewitz",
+				"given": "Alexander"
+			},
+			{
+				"family": "Weiss",
+				"given": "Rene"
+			},
+			{
+				"family": "Woods",
+				"given": "Eoin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Cockburn2005",
+		"type": "article-web",
+		"title": "Hexagonal Architecture",
+		"container-title": "",
+		"language": "en",
+		"author": [
+			{
+				"family": "Cockburn",
+				"given": "Alistair"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005",
+					"1",
+					"4"
+				]
+			]
+		},
+		"URL": "https://alistair.cockburn.us/hexagonal-architecture/"
+	},
+    {
+		"id": "bib:CockburnGarridoDePaz2024",
+		"type": "book",
+		"publisher": "Humans and Technology Press",
+		"publisher-place": "Salt Lake City, UT",
+		"title": "Hexagonal Architecture Explained: How the Ports & Adapters Architecture Simplifies Your Life, and How to Implement It",
+		"language": "en",
+		"author": [
+            {
+                "family": "Cockburn",
+                "given": "Alistair"
+            },
+            {
+                "family": "Garrido de Paz",
+                "given": "Juan Manuel"
+            }
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Conway1968",
+		"type": "article-journal",
+		"title": "How Do Committees Invent?",
+		"container-title": "Datamation",
+		"volume": "14",
+		"issue": "5",
+		"page": "28–31",
+		"language": "en",
+		"author": [
+			{
+				"family": "Conway",
+				"given": "Melvin E."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1968",
+					"4"
+				]
+			]
+		},
+		"URL": "https://www.melconway.com/Home/Conways_Law.html"
+	},
+    {
+		"id": "bib:DesignCouncil",
+		"type": "article-web",
+		"title": "Eleven Lessons: Managing Design in Eleven Global Brands",
+		"author": [
+			{
+				"family": "Design Council",
+				"given": ""
+			}
+		],
+		"language": "en",
+		"URL": "https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/ElevenLessons_Design_Council%2520%25282%2529.pdf"
+	},
+    {
+		"id": "bib:Dijkstra1968",
+		"type": "article-journal",
+		"title": "Go To Statement Considered Harmful",
+		"container-title": "Communications of the ACM",
+		"volume": "11",
+		"issue": "3",
+		"page": "147–148",
+		"language": "en",
+        "author": [
+			{
+				"family": "Dijkstra",
+				"given": "Edsger"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1968",
+					"3"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Drotbohm2022",
+		"type": "article-web",
+		"title": "Architecturally Evident Applications: How to Bridge the Model-Code Gap?",
+		"container-title": "",
+		"language": "en",
+		"author": [
+			{
+				"family": "Drotbohm",
+				"given": "Oliver"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+                    "2"
+				]
+			]
+		},
+		"URL": "https://xmolecules.org/aea-paper.pdf"
+	},
+	{
+		"id": "bib:Evans2004",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+		"language": "en",
+		"author": [
+			{
+				"family": "Evans",
+				"given": "Eric"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Evans2013",
+		"type": "article-web",
+		"title": "Getting Started with DDD When Surrounded by Legacy Systems",
+		"container-title": "Domain Language",
+		"language": "en",
+		"author": [
+			{
+				"family": "Evans",
+				"given": "Eric"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		},
+		"URL": "https://www.domainlanguage.com/ddd/surrounded-by-legacy-software/"
+	},
+	{
+		"id": "bib:Evans2015",
+		"type": "book",
+		"publisher": "Published by the author",
+		"title": "Domain-Driven Design Reference: Definitions and Pattern Summaries",
+		"language": "en",
+		"author": [
+			{
+				"family": "Evans",
+				"given": "Eric"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		},
+        "URL": "https://www.domainlanguage.com/ddd/reference/"
+	},
+	{
+		"id": "bib:Feathers2004",
+		"type": "book",
+		"publisher": "Prentice Hall",
+		"publisher-place": "Upper Saddle River, NJ",
+		"title": "Working Effectively with Legacy Code",
+		"language": "en",
+		"author": [
+			{
+				"family": "Feathers",
+				"given": "Michael C."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Floyd1993",
+		"type": "article-journal",
+		"title": "STEPS: a Methodical Approach to PD",
+		"container-title": "Communications of the ACM",
+		"volume": "63",
+		"issue": "4",
+		"page": "83",
+		"language": "en",
+		"author": [
+			{
+				"family": "Floyd",
+				"given": "Christiane"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1993"
+				]
+			]
+		},
+		"DOI": "10.1145/153571.214826"
+	},
+    {
+		"id": "bib:FooteYoder1997",
+		"type": "paper-conference",
+		"title": "Big Ball of Mud",
+		"container-title": "Fourth Conference on Patterns Languages of Programs (PLoP '97)",
+        "event-place": "Monticello, IL",
+        "collection-title": "Technical Report #WUCS-97-34",
+        "publisher": "Department of Computer Science, Washington University",
+        "language": "en",
+		"author": [
+			{
+				"family": "Foote",
+				"given": "Brian"
+			},
+            {
+                "family": "Yoder",
+                "given": "Joseph"
+            }
+            ],
+		"issued": {
+			"date-parts": [
+				[
+					"1997",
+                    "9"
+				]
+			]
+		},
+		"URL": "http://www.laputan.org/mud/"
+	},
+    {
+		"id": "bib:ForsgrenHumbleKim2018",
+		"type": "book",
+		"publisher": "IT Revolution",
+		"publisher-place": "Portland, OR",
+		"title": "Accelerate: Building and Scaling High Performing Technology Organizations",
+		"language": "en",
+        "TODO": "zitieren",
+		"author": [
+			{
+				"family": "Forsgren",
+				"given": "Nicole"
+			},
+			{
+				"family": "Humble",
+				"given": "Jez"
+			},
+			{
+				"family": "Kim",
+				"given": "Gene"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:daSilvaTune2023",
+		"type": "article-web",
+		"title": "Architecture Modernization Enabling Teams (AMET)",
+		"container-title": "Medium",
+		"language": "en",
+		"author": [
+			{
+				"family": "da Silva",
+				"given": "Eduardo"
+			},
+			{
+				"family": "Tune",
+				"given": "Nick"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					"02",
+					"17"
+				]
+			]
+		},
+		"URL": "https://medium.com/nick-tune-tech-strategy-blog/architecture-modernization-enabling-teams-amet-23a7f867b284"
+	},
+    {
+		"id": "bib:Fowler1997",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Analysis Patterns: Reusable Object Models",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"1997"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Fowler2003PoEAA",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Patterns of Enterprise Application Architecture",
+		"language": "en",
+        "author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Fowler2003Anemic",
+		"type": "article-web",
+		"title": "Anemic Domain Model",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003",
+					"11",
+					"25"
+				]
+			]
+		},
+		"URL": "https://www.martinfowler.com/bliki/AnemicDomainModel.html"
+	},
+    {
+		"id": "bib:Fowler2004UML",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "UML Distilled: A Brief Guide to the Standard Object Modeling Language",
+		"edition": "3",
+		"language": "en",
+        "author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Fowler2004Strangler",
+		"type": "article-web",
+		"title": "Strangler Fig Application",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004",
+					"6",
+					"29"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/bliki/StranglerFigApplication.html"
+	},
+    {
+		"id": "bib:Fowler2005EventSourcing",
+		"type": "article-web",
+		"title": "EventSourcing",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005",
+					"12",
+					"12"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/eaaDev/EventSourcing.html"
+	},
+    {
+		"id": "bib:Fowler2011CQRS",
+		"type": "article-web",
+		"title": "CQRS",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011",
+					"07",
+					"14"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/bliki/CQRS.html"
+	},
+    {
+		"id": "bib:Fowler2014Exception",
+		"type": "article-web",
+		"title": "Replacing Throwing Exceptions with Notification in Validations",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					"12",
+					"09"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/articles/replaceThrowWithNotification.html"
+	},
+    {
+		"id": "bib:Fowler2017EventDriven",
+		"type": "article-web",
+		"title": "Event-Driven",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					"02",
+					"07"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/articles/201701-event-driven.html"
+	},
+	{
+		"id": "bib:Fowler1999",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Refactoring: Improving the Design of Existing Code",
+		"edition": "1",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1999"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Fowler2019",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Refactoring: Improving the Design of Existing Code",
+		"edition": "2",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Fowler2021",
+		"type": "article-web",
+		"title": "On the Diverse and Fantastical Shapes of Testing",
+		"language": "en",
+		"author": [
+			{
+				"family": "Fowler",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					"6",
+					"2"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/articles/2021-test-shapes.html"
+	},
+	{
+		"id": "bib:GammaEtAl1995",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Reading, MA",
+		"title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+		"language": "en",
+		"author": [
+			{
+				"family": "Gamma",
+				"given": "Erich"
+			},
+			{
+				"family": "Helm",
+				"given": "Richard"
+			},
+			{
+				"family": "Johnson",
+				"given": "Ralph"
+			},
+			{
+				"family": "Vlissides",
+				"given": "John"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Graca2017",
+		"type": "article-web",
+		"title": "DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together",
+		"container-title": "Blog",
+		"language": "en",
+		"author": [
+			{
+				"family": "Graca",
+				"given": "Herberto"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					"11",
+					"16"
+				]
+			]
+		},
+		"URL": "https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/"
+	},
+    {
+		"id": "bib:Hoare2009",
+		"type": "paper-conference",
+		"title": "Null References: The Billion Dollar Mistake",
+		"container-title": "QCon London 2009, Track: Historically bad ideas",
+		"language": "en",
+		"author": [
+			{
+				"family": "Hoare",
+				"given": "C.A.R."
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		},
+        "URL": "https://qconlondon.com/london-2009/qconlondon.com/london-2009/tracks/show_trackd04f.html?trackOID=232"
+	},
+    {
+		"id": "bib:Helfland2020",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Dynamic Reteaming: The Art & Wisdom of Changing Teams",
+		"language": "en",
+		"author": [
+			{
+				"family": "Helfland",
+				"given": "Heidi"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:HofSchwZuel2020",
+		"type": "article-web",
+		"title": "Distilling the Essence of Collaborative Modeling",
+		"container-title": "Medium",
+		"language": "en",
+		"author": [
+			{
+				"family": "Hofer",
+				"given": "Stefan"
+			},
+			{
+				"family": "Schwentner",
+				"given": "Henning"
+			},
+			{
+				"family": "Züllighoven",
+				"given": "Heinz"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		},
+		"URL": "https://medium.com/@wps_de/distilling-the-essence-of-collaborative-modeling-ad1dd5204112"
+	},
+    {
+		"id": "bib:HoferSchwentner2022",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Domain Storytelling: a Collaborative, Visual, and Agile Way to Develop Domain-Driven Software",
+		"language": "en",
+		"author": [
+			{
+				"family": "Hofer",
+				"given": "Stefan"
+			},
+			{
+				"family": "Schwentner",
+				"given": "Henning"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Hohpe2020",
+        "type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "The Software Architect Elevator: Redesigning the Architect’s Role in the Digital Enterprise",
+		"language": "en",
+		"author": [
+			{
+				"family": "Hohpe",
+				"given": "Gregor"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:HumbleFarley2011",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Upper Saddle River, NJ",
+		"title": "Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation",
+		"language": "en",
+		"author": [
+			{
+				"family": "Humble",
+				"given": "Jez"
+			},
+			{
+				"family": "Farley",
+				"given": "David"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:HuntThomas2019",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "The Pragmatic Programmer: Your Journey to Mastery, 20th Anniversary Edition",
+		"language": "en",
+		"author": [
+			{
+				"family": "Hunt",
+				"given": "Andrew"
+			},
+			{
+				"family": "Thomas",
+				"given": "David"
+			}
+        ],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Jackson2019MicroUI",
+		"type": "article-web",
+		"title": "Micro Frontends",
+		"container-title": "Bliki",
+		"language": "en",
+		"author": [
+			{
+				"family": "Jackson",
+				"given": "Cam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					"06",
+					"19"
+				]
+			]
+		},
+		"URL": "https://martinfowler.com/articles/micro-frontends.html"
+	},
+    {
+		"id": "bib:Kaiser2026",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Architecture for Flow: Adaptive Systems with Domain-Driven Design, Wardley Mapping, and Team Topologies",
+		"language": "en",
+		"author": [
+			{
+				"family": "Kaiser",
+				"given": "Susanne"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2026"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Junker2025",
+        "type": "book",
+		"publisher": "BPB",
+		"publisher-place": "India",
+		"title": "Mastering Domain-Driven Design: Collaborative Modeling with Domain Storytelling, Event Storming, and Context Mapping",
+		"language": "en",
+		"author": [
+			{
+				"family": "Junker",
+				"given": "Annegret"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Khononov2022",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Learning Domain-Driven Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Khononov",
+				"given": "Vlad"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Khononov2024",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Balancing Coupling in Software Design: Universal Design Principles for Architecting Modular Software Systems",
+		"language": "en",
+		"author": [
+			{
+				"family": "Khononov",
+				"given": "Vlad"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Koch2022",
+		"type": "online",
+		"title": "Scenario Casting",
+		"language": "en",
+		"author": [
+			{
+				"family": "Koch",
+				"given": "Jörn"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+            	]
+			]
+		},
+		"URL": "https://scenario-casting.org"
+	},
+	{
+		"id": "bib:KurtzSnowden2003",
+		"type": "article-journal",
+		"title": "The new dynamics of strategy: Sense-making in a complex and complicated world",
+		"container-title": "IBM Systems Journal",
+		"volume": "42",
+		"issue": "3",
+		"page": "462–483",
+		"language": "en",
+		"author": [
+			{
+				"family": "Kurtz",
+				"given": "Cynthia F."
+			},
+			{
+				"family": "Snowden",
+				"given": "David J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Krilic2024",
+		"type": "article-web",
+		"title": "Building an Application with TDD, DDD and Hexagonal Architecture—Isn’t it a bit too much?",
+		"container-title": "Medium",
+		"language": "en",
+		"author": [
+			{
+				"family": "Krilic",
+				"given": "Mufrid"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					"5",
+					"22"
+				]
+			]
+		},
+		"URL": "https://mufridk.medium.com/building-an-application-with-tdd-ddd-and-hexagonal-architecture-isnt-it-a-bit-too-much-f4b55110f0e3"
+	},
+    {
+		"id": "bib:Lilienthal2008",
+		"type": "thesis",
+		"publisher": "University of Hamburg",
+        "genre": "Doctoral dissertation",
+		"title": "Komplexität von Softwarearchitekturen: Stile und Strategien",
+		"language": "de",
+		"author": [
+			{
+				"family": "Lilienthal",
+				"given": "Carola"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		},
+		"URL": "https://ediss.sub.uni-hamburg.de/handle/ediss/2160"
+	},
+	{
+		"id": "bib:Lilienthal2019",
+		"type": "book",
+		"publisher": "dpunkt",
+		"publisher-place": "Heidelberg",
+		"title": "Sustainable Software Architecture: Analyze and Reduce Technical Debt",
+		"language": "en",
+		"author": [
+			{
+				"family": "Lilienthal",
+				"given": "Carola"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Liskov1994",
+		"type": "article-journal",
+		"title": "A Behavioral Notion of Subtyping",
+		"container-title": "ACM Transactions on Programming Languages and Systems",
+		"volume": "16",
+		"issue": "6",
+		"page": "1811–41",
+		"language": "en",
+		"author": [
+			{
+				"family": "Liskov",
+				"given": "Barbara"
+			},
+			{
+				"family": "Wing",
+				"given": "Jeannette"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1994"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:MannsRising2015",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "More Fearless Change",
+		"language": "en",
+		"author": [
+			{
+				"family": "Manns",
+				"given": "Mary Lynn"
+			},
+			{
+				"family": "Rising",
+				"given": "Linda"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Martin2010",
+		"type": "chapter",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "The Boy Scout Rule",
+		"container-title": "97 Things Every Programmer Should Know: Collective Wisdom by the Experts",
+		"language": "en",
+		"author": [
+			{
+				"family": "Martin",
+                "given": "Robert C."
+			}
+		],
+		"editor": [
+			{
+				"family": "Henney",
+				"given": "Kevlin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Martin2013",
+		"type": "book",
+		"publisher": "Prentice Hall",
+		"publisher-place": "Upper Saddle River, NJ",
+		"title": "Agile Software Development: Principles, Patterns, and Practices",
+		"language": "en",
+		"author": [
+			{
+				"family": "Martin",
+				"given": "Robert C."
+			}
+        ],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Martin2018",
+		"type": "book",
+		"publisher": "Prentice Hall",
+		"publisher-place": "Boston",
+		"title": "Clean Architecture: A Craftsman’s Guide to Software Structure and Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Martin",
+				"given": "Robert C."
+			}
+        ],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Martraire2019",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Living Documentation: Continuous Knowledge Sharing by Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Martraire",
+				"given": "Cyrille"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Meyer1997",
+		"type": "book",
+		"publisher": "Prentice Hall",
+		"publisher-place": "Upper Saddle River, NJ",
+		"title": "Object-oriented Software Construction",
+		"edition": "2",
+		"language": "en",
+		"author": [
+			{
+				"family": "Meyer",
+				"given": "Bertrand"
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"1997"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:MilletTune2015",
+		"type": "book",
+		"publisher": "Wrox",
+		"publisher-place": "Birmingham",
+		"title": "Patterns, Principles, and Practices of Domain-Driven Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Millet",
+				"given": "Scott"
+			},
+			{
+				"family": "Tune",
+				"given": "Nick"
+			}		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Myers1978",
+		"type": "book",
+		"publisher": "Van Nostrand Reinhold",
+		"publisher-place": "New York",
+		"title": "Composite/Structured Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Myers",
+				"given": "Glenford J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1978"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Newman2015",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Building Microservices: Designing Fine-Grained Systems",
+		"edition": "1",
+		"language": "en",
+		"author": [
+			{
+				"family": "Newman",
+				"given": "Sam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Newman2022",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Building Microservices: Designing Fine-Grained Systems",
+		"edition": "2",
+		"language": "en",
+		"author": [
+			{
+				"family": "Newman",
+				"given": "Sam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Newman2020",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith",
+		"language": "en",
+		"author": [
+			{
+				"family": "Newman",
+				"given": "Sam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Palermo2008",
+		"type": "article-web",
+		"title": "The Onion Architecture",
+		"language": "en",
+		"author": [
+			{
+				"family": "Palermo",
+				"given": "Jeffrey"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					"7",
+					"28"
+				]
+			]
+		},
+		"URL": "https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1"
+	},
+	{
+		"id": "bib:Parnas1972",
+		"type": "article-journal",
+		"title": "On the Criteria to be Used in Decomposing Systems into Modules",
+		"container-title": "Communications of the ACM",
+		"volume": "15",
+		"issue": "12",
+		"page": "1053–1058",
+		"language": "en",
+        "author": [
+			{
+				"family": "Parnas",
+				"given": "David L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1972",
+					"12"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Patton2014",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "User Story Mapping: Discover the Whole Story, Build the Right Product",
+		"language": "en",
+		"author": [
+			{
+				"family": "Patton",
+				"given": "Jeff"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Plöd2020",
+        "type": "book",
+		"publisher": "Published by the author",
+		"title": "Hands On Domain-Driven Design—by Example",
+		"language": "en",
+        "URL": "https://leanpub.com/ddd-by-example",
+		"author": [
+			{
+				"family": "Plöd",
+				"given": "Michael"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+                    "6",
+                    "24"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Plöd2025",
+		"type": "article-web",
+		"title": "Bounded Contexts Are All About Cohesion",
+		"container-title": "(blog)",
+		"language": "en",
+		"author": [
+			{
+				"family": "Plöd",
+				"given": "Michael"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					"10",
+					"23"
+				]
+			]
+		},
+		"URL": "https://www.michael-ploed.com/blog/bounded-contexts-are-all-about-cohesion"
+	},
+	{
+		"id": "bib:Rayner2024",
+		"type": "book",
+		"publisher": "Published by the author",
+		"title": "The EventStorming Handbook: Unlocking Creativity, Collaboration, and Communication for Your Teams",
+		"language": "en",
+		"URL": "https://leanpub.com/eventstorming_handbook",
+		"author": [
+			{
+				"family": "Rayner",
+				"given": "Paul"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					3
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Read2023",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Communication Patterns: A Guide for Developers and Architects",
+		"language": "en",
+		"author": [
+			{
+				"family": "Read",
+				"given": "Jacqui"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:RichardsFord2020",
+		"type": "book",
+		"publisher": "O’Reilly",
+		"publisher-place": "Sebastopol, CA",
+		"title": "Fundamentals of Software Architecture: An Engineering Approach",
+		"language": "en",
+		"author": [
+			{
+				"family": "Richards",
+				"given": "Mark"
+			},
+			{
+				"family": "Ford",
+				"given": "Neal"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:RoockLippert2006",
+		"type": "book",
+		"publisher": "Wiley",
+		"publisher-place": "TODO: Chichester or Hoboken, NJ??",
+		"title": "Refactoring in Large Software Projects: Performing Complex Restructurings Successfully",
+		"language": "en",
+		"author": [
+			{
+				"family": "Roock",
+				"given": "Stefan"
+			},
+			{
+				"family": "Lippert",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Schaller1997",
+		"type": "article-journal",
+		"title": "Moore's law: past, present and future",
+		"container-title": "IEEE Spectrum",
+		"volume": "34",
+		"issue": "6",
+		"page": "52–59",
+		"language": "en",
+		"author": [
+			{
+				"family": "Schaller",
+				"given": "R. R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1997",
+					"06"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Schimak2019",
+		"type": "article-web",
+		"title": "Storystorming",
+		"container-title": "Medium",
+		"language": "en",
+		"author": [
+			{
+				"family": "Schimak",
+				"given": "Martin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					"6",
+					"9"
+				]
+			]
+		},
+		"URL": "https://medium.com/plexiti/story-storming-191756f57387"
+	},
+    {
+		"id": "bib:SchmidtEtAl2000",
+		"type": "book",
+		"publisher": "Wiley",
+		"publisher-place": "New York",
+        "TODO": "zitieren?",
+		"title": "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects",
+		"language": "en",
+		"author": [
+			{
+				"family": "Schmidt",
+				"given": "Douglas C."
+			},
+			{
+				"family": "Stal",
+				"given": "Michael"
+			},
+			{
+				"family": "Buschmann",
+				"given": "Frank"
+			},
+			{
+				"family": "Rohnert",
+				"given": "Hans"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2000"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:SchwaberSutherland2020",
+		"type": "book",
+		"title": "The Scrum Guide",
+		"language": "en",
+		"author": [
+			{
+				"family": "Schwaber",
+				"given": "Ken"
+			},
+			{
+				"family": "Sutherland",
+				"given": "Jeff"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		},
+        "URL": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+	},
+    {
+		"id": "bib:Schwentner2008",
+		"type": "thesis",
+		"publisher": "University of Hamburg",
+        "genre": "Master’s thesis",
+		"title": "Wider die enge Kopplung: Große Refactorings in einem Prozess zur Entflechtung von Anwendung und Rahmenwerk",
+		"language": "de",
+		"author": [
+			{
+				"family": "Schwentner",
+				"given": "Henning"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		},
+        "URL": "https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/diplomarbeit-henning_schwentner_mit_deckblatt.pdf"
+	},
+    {
+		"id": "bib:Siedersleben2004",
+		"type": "book",
+		"publisher": "dpunkt",
+		"publisher-place": "Heidelberg",
+		"title": "Moderne Softwarearchitektur: Umsichtig planen, robust bauen mit Quasar",
+		"edition": "3",
+		"language": "de",
+		"author": [
+			{
+				"family": "Siedersleben",
+				"given": "Johannes"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:SkeltonPais2019",
+		"type": "book",
+		"publisher": "IT Revolution",
+		"publisher-place": "Portland, OR",
+		"title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+		"language": "en",
+		"author": [
+			{
+				"family": "Skelton",
+				"given": "Matthew"
+			},
+			{
+				"family": "Pais",
+				"given": "Manuel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:SnowdenBoone2007",
+		"type": "article-journal",
+		"title": "A Leader’s Framework for Decision Making",
+		"container-title": "Harvard Business Review",
+		"volume": "85",
+		"issue": "11",
+		"page": "68–76",
+		"language": "en",
+		"author": [
+			{
+				"family": "Snowden",
+				"given": "David J."
+			},
+			{
+                "family": "Boone",
+                "given": "Mary E."
+            }
+        ],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		},
+        "PMID": "18159787"
+	},
+    {
+		"id": "bib:Spolsky2003Exception",
+		"type": "article-web",
+		"title": "Exceptions",
+		"container-title": "Joel on Software (blog)",
+		"language": "en",
+		"author": [
+			{
+				"family": "Spolsky",
+				"given": "Joel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2003",
+					"10",
+					"13"
+				]
+			]
+		},
+		"URL": "https://www.joelonsoftware.com/2003/10/13/13/"
+	},
+	{
+		"id": "bib:Starke2024",
+		"type": "book",
+		"publisher": "Hanser",
+		"publisher-place": "Munich",
+		"title": "Effektive Softwarearchitekturen: Ein praktischer Leitfaden",
+		"language": "de",
+		"author": [
+			{
+				"family": "Starke",
+				"given": "Gernot"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:StevensMyersConstantine1974",
+		"type": "article-journal",
+		"title": "Structured Design",
+		"container-title": "IBM Systems Journal",
+		"volume": "13",
+		"issue": "2",
+		"page": "115–139",
+		"language": "en",
+		"author": [
+			{
+				"family": "Stevens",
+				"given": "Wayne P."
+			},
+			{
+				"family": "Myers",
+				"given": "Glenford J."
+			},
+			{
+				"family": "Constantine",
+				"given": "Larry L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1974"
+				]
+			]
+		},
+		"DOI": "10.1147/sj.132.0115"
+	},
+	{
+		"id": "bib:Stroustrup2024",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Hoboken, NJ",
+		"title": "Programming: Principles and Practice using C++",
+		"edition": "3",
+		"language": "en",
+		"author": [
+			{
+				"family": "Stroustrup",
+				"given": "Bjarne"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Tornhill2015",
+		"type": "book",
+		"publisher": "Pragmatic Bookshelf",
+		"publisher-place": "Dallas",
+		"title": "Your Code as a Crime Scene: Use Forensic Techniques to Arrest Defects, Bottlenecks, and Bad Design in Your Programs",
+		"language": "en",
+		"author": [
+			{
+				"family": "Tornhill",
+				"given": "Adam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Tornhill2018",
+		"type": "book",
+		"publisher": "Pragmatic Bookshelf",
+		"publisher-place": "Raleigh, NC",
+		"title": "Software Design X-Rays: Fix Technical Debt with Behavioral Code Analysis",
+		"language": "en",
+		"author": [
+			{
+				"family": "Tornhill",
+				"given": "Adam"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Tuckman1965",
+		"type": "article-journal",
+		"title": "Developmental Sequence in Small Groups",
+		"container-title": "Psychological Bulletin",
+		"volume": "63",
+		"issue": "6",
+		"page": "384–399",
+		"language": "en",
+		"author": [
+			{
+				"family": "Tuckman",
+				"given": "Bruce W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1965"
+				]
+			]
+		},
+		"DOI": "10.1037/h0022100"
+	},
+    {
+		"id": "bib:Tune2024",
+		"type": "book",
+		"publisher": "Manning",
+		"publisher-place": "Shelter Island, NY",
+		"title": "Architecture Modernization: Socio-technical Alignment of Software, Strategy, and Structure",
+		"language": "en",
+        "author": [
+			{
+				"family": "Tune",
+				"given": "Nick"
+			},
+            {
+				"family": "Perrin",
+				"given": "Jean-Georges"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:vanKelleVerschatseBaas2025",
+		"type": "book",
+		"publisher": "Manning",
+		"publisher-place": "Shelter Island, NY",
+		"title": "Collaborative Software Design: How to Facilitate Domain Modeling Decisions",
+		"language": "en",
+        "author": [
+			{
+				"family": "van Kelle",
+				"given": "Evelyn"
+			},
+            {
+				"family": "Verschatse",
+				"given": "Gien"
+			},
+ 			{
+				"family": "Baas-Schwegler",
+				"given": "Kenny"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Vernon2013",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Upper Saddle River, NJ",
+		"title": "Implementing Domain-Driven Design",
+		"language": "en",
+		"author": [
+			{
+				"family": "Vernon",
+				"given": "Vaughn"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Vernon2015",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Reactive Messaging Patterns with the Actor Model: Application and Integration in Scala and Akka",
+		"language": "en",
+		"author": [
+			{
+				"family": "Vernon",
+				"given": "Vaughn"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Vernon2016",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Domain-Driven Design Distilled",
+		"language": "en",
+		"author": [
+			{
+				"family": "Vernon",
+				"given": "Vaughn"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Vernon2017",
+		"type": "book",
+		"publisher": "dpunkt",
+		"publisher-place": "Heidelberg",
+		"title": "Domain-Driven Design kompakt",
+		"language": "de",
+		"author": [
+			{
+				"family": "Vernon",
+				"given": "Vaughn"
+			}
+		],
+        "translator": [
+			{
+				"family": "Lilienthal",
+				"given": "Carola"
+			},
+			{
+				"family": "Schwentner",
+				"given": "Henning"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:VernonJaskula2022",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture",
+		"language": "en",
+		"author": [
+			{
+				"family": "Vernon",
+				"given": "Vaughn"
+			},
+			{
+				"family": "Jaskuła",
+				"given": "Tomasz"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:VossEtAl2006",
+		"type": "paper-conference",
+		"title": "Towards a Framework for Large Scale Quality Architecture",
+		"container-title": "Perspectives in Software Architecture Quality. Short papers of the 2nd International Conference on the Quality of Software Architectures (QoSA 2006)",
+        "editor":[
+            {
+                "family": "Hofmeister",
+                "given": "Christine"
+            },
+            {
+                "family": "Crnkovic",
+                "given": "Ivica"
+            },
+
+            {
+                "family": "Reussner",
+                "given": "Ralf"
+            },
+            {
+                "family": "Becker",
+                "given": "Steffen"
+            }
+        ],
+        "page": "52–58",
+        "ISSN": "1432-7864",
+        "collection-title": "Internal report",
+        "publisher": "Department of Informatics, University of Karlsruhe",
+        "event-place": "Västeras",
+		"language": "en",
+		"author": [
+			{
+				"family": "Voss",
+				"given": "Markus"
+			},
+			{
+				"family": "Hess",
+				"given": "Andreas"
+			},
+			{
+				"family": "Humm",
+				"given": "Bernhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2006"
+				]
+			]
+		},
+		"DOI": "10.5445/IR/1000005146"
+	},
+    {
+		"id": "bib:Wardley2020",
+		"type": "book",
+		"publisher": "Published by the author",
+		"title": "Wardley Maps: Topographical Intelligence in Business",
+		"language": "en",
+        "URL": "https://github.com/HiredThought/wardley-maps-ebook/raw/main/bin/Wardley%20Maps%20-%20Simon%20Wardley.pdf",
+		"author": [
+			{
+				"family": "Wardley",
+				"given": "Simon"
+			}
+		],
+		"issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    "12",
+                    "23"
+                ]
+            ]
+        }
+	},
+    {
+		"id": "bib:Wlaschin2018",
+		"type": "book",
+		"publisher": "Pragmatic Bookshelf",
+		"publisher-place": "Raleigh, NC",
+		"title": "Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#",
+		"language": "en",
+		"author": [
+			{
+				"family": "Wlaschin",
+				"given": "Scott"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Wolff2017",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "A Practical Guide to Continuous Delivery",
+		"language": "en",
+		"author": [
+			{
+				"family": "Wolff",
+				"given": "Eberhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Wolff2016",
+		"type": "book",
+		"publisher": "Addison-Wesley",
+		"publisher-place": "Boston",
+		"title": "Microservices: Flexible Software Architecture",
+		"language": "en",
+		"author": [
+			{
+				"family": "Wolff",
+				"given": "Eberhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:Wynne2015",
+		"type": "online",
+		"title": "Introducing Example Mapping",
+		"container-title": "Cucumber Blog",
+		"language": "en",
+		"author": [
+			{
+				"family": "Wynne",
+				"given": "Matt"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					"12",
+					"8"
+				]
+			]
+		},
+		"URL": "https://cucumber.io/blog/bdd/example-mapping-introduction"
+	},
+    {
+		"id": "bib:YourdonConstantine1978",
+		"type": "book",
+		"publisher": "Yourdon Press",
+		"publisher-place": "New York",
+		"title": "Structured Design: Fundamentals of a Discipline of Computer Program and System Design",
+		"edition": "2",
+		"language": "en",
+		"author": [
+			{
+				"family": "Yourdon",
+				"given": "Edward"
+			},
+			{
+				"family": "Constantine",
+				"given": "Larry L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1978"
+				]
+			]
+		}
+	},
+    {
+		"id": "bib:Züllighoven2005",
+		"type": "book",
+		"publisher": "Morgan Kaufmann",
+		"publisher-place": "San Francisco",
+		"title": "Object-Oriented Construction Handbook: Developing Application-Oriented Software with the Tools and Materials Approach",
+		"language": "en",
+		"author": [
+			{
+				"family": "Züllighoven",
+				"given": "Heinz"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2005"
+				]
+			]
+		}
+	},
+	{
+		"id": "bib:iSAQB",
+		"type": "online",
+		"title": "international Software Architecture Quality Board, Foundation Level",
+		"container-title": "Training for Architects",
+		"language": "en",
+		"author": [
+			{
+				"family": "iSAQB e.V.",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		},
+		"URL": "https://www.isaqb.org/certifications/cpsa-certifications/cpsa-foundation-level/"
+	},
+    {
+		"id": "bib:aim42",
+		"type": "online",
+		"title": "Architecture Improvement Method",
+		"container-title": "Open Source Project",
+		"language": "en",
+		"author": [
+			{
+				"family": "Starke",
+				"given": "Gernot"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"URL": "https://aim42.github.io/"
+	},
+    {
+		"id": "bib:arc42",
+		"type": "online",
+		"title": "arc42",
+		"container-title": "Open Source Project",
+		"language": "en",
+		"author": [
+			{
+				"family": "Starke",
+				"given": "Gernot"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"URL": "https://www.arc42.org/"
+	},
+    {
+		"id": "bib:archunit",
+		"type": "online",
+		"title": "Unit test your Java architecture",
+		"container-title": "Open Source Project",
+		"language": "en",
+		"author": [
+			{
+				"family": "Gafert",
+				"given": "Peter"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		},
+		"URL": "https://www.archunit.org/"
+	},
+    {
+		"id": "bib:Floyd1992",
+		"type": "chapter",
+		"container-title": "Software Development and Reality Construction",
+		"event-place": "Berlin",
+		"page": "86–100",
+		"publisher": "Springer",
+		"publisher-place": "Berlin",
+		"title": "Software Development as Reality Construction",
+		"language": "en",
+		"author": [
+			{
+				"family": "Floyd",
+				"given": "Christiane"
+			}
+		],
+		"editor": [
+			{
+				"family": "Floyd",
+				"given": "Christiane"
+			},
+			{
+				"family": "Züllighoven",
+				"given": "Heinz"
+			},
+			{
+				"family": "Budde",
+				"given": "Reinhard"
+			},
+			{
+				"family": "Keil-Slawik",
+				"given": "Reinhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1992"
+				]
+			]
+		}
+	}
+]

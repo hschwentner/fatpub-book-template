@@ -1,6 +1,6 @@
 # Introduction
 
-This book is a template to show how to write books with FatPub. In this chapter we show some examples. This is a paragraph.
+This book is a template to show how to write books with FatPub. See also the Markua documentation. In this chapter we show some examples. This is a paragraph.
 
 This is another paragraph.
 
@@ -60,3 +60,23 @@ Table 1.1: Essential and accidental complexity {#tbl:example-table}
 | Type B | Complexity of the modeling | Superfluous parts of the solution  |
 
 This is the paragraph after the table.
+
+## Asides and Blurbs
+
+> ## An Example Aside
+>
+> In this aside there are several sentences. Asides can contain one or multiple paragraphs. They can also contain figures.
+>
+> This is the second paragraph of the aside.
+
+This is a paragraph after the aside.
+
+Some templates allow for blurbs like quote, tip, and note.
+
+## Page breaks
+
+If you want to force a page break, you can do so with the following.
+
+{pagebreak}
+
+This paragraph always starts on a new page.
