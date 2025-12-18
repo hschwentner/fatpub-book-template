@@ -1,0 +1,130 @@
+name: Generate book as DOCX
+on:
+  - workflow_dispatch
+  - push
+
+jobs:
+  convert-svg:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Cache converted image files
+        id: cache-images
+        uses: actions/cache@v5
+        with:
+            path: out/images-converted-to-png
+            key: images-${{ hashFiles('manuscript/images/**/*.svg') }}
+
+## Alternative A:
+#      - name: Convert SVG files to PNG
+#        if: steps.cache-images.outputs.cache-hit != 'true'
+#        uses: hschwentner/fatpub-svg-convert@0.2
+#        with:
+# Alternative B:
+      - name: Install pdftops, and Inkscape
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            qpdf \
+            poppler-utils \
+            inkscape
+      - name: Install Draw.io
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get install -y libappindicator3-1 libnotify4 libsecret-1-0
+          wget --no-verbose https://github.com/jgraph/drawio-desktop/releases/download/v29.0.3/drawio-amd64-29.0.3.deb
+          sudo dpkg -i drawio-amd64-*.deb
+          sudo apt -y -f install
+      - name: Checkout conversion script
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        uses: actions/checkout@v6
+        with:
+            repository: hschwentner/fatpub-svg-convert
+            ref: v0.8           # alternatives: main v0.2
+            path: fatpub-svg-convert
+      - name: Install fonts for images
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp fonts/*.ttf ~/.local/share/fonts
+
+      - name: Convert SVG files to PNG for embedding in DOCX
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: >
+          fatpub-svg-convert/bin/convert-svg-files \
+            --output-directory out/images-converted-to-png \
+            --output-format png \
+            --dpi 300 \
+            --parallel false \
+            manuscript/images
+
+    #   - name: Convert SVG files to EPS for publisher
+    #     if: steps.cache-images.outputs.cache-hit != 'true'
+    #     run: >
+    #       fatpub-svg-convert/bin/convert-svg-files \
+    #         --output-directory out/images-converted-to-eps \
+    #         --output-format eps \
+    #         --dpi 900 \
+    #         --parallel false \
+    #         manuscript/images
+
+      - name: Upload converted images
+        uses: actions/upload-artifact@v6
+        with:
+            name: converted-images
+            path: out/images-converted-to-png
+
+  build-docx:
+    needs: convert-svg
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download converted images
+        uses: actions/download-artifact@v7
+        with:
+            name: converted-images
+            path: out/images-converted-to-png
+
+      - name: Convert to Dpunkt format
+        uses: hschwentner/fatpub@v1.20   # alternatives: fatpub@v1.2 or fatpub@main
+        with:
+          template: dpunkt_2019 # alternatives: dpunkt_einspaltig dpunkt_2019
+          in: manuscript/book.txt
+          out: out/book-dpunkt_2019.md
+
+      - name: Use PNG files
+        run: >
+          sed -E \
+            -e "s#\]\(images/(.*)\.svg\)#](out/images-converted-to-png/\1.svg.png)#g" \
+            out/book-dpunkt_2019.md \
+            > out/book-dpunkt_2019-png.md
+
+      - name: Convert MD to DOCX
+        uses: docker://pandoc/core:3.8.3
+        with:  # alternatives: dpunkt_einspaltig.docx Vorlage-2019.dotx
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=docx
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata.yaml
+            --reference-doc=templates/dpunkt/Vorlage-2019-henning.dotx
+            --filter=pandoc-crossref
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-de-henning.csl
+            --lua-filter=lib/newpage.lua
+            --output=out/book.docx
+            out/book-dpunkt_2019-png.md
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: book
+          path: out/

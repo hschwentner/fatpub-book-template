@@ -1,0 +1,103 @@
+name: Convert SVG files
+on:
+  - workflow_dispatch
+  - push
+
+jobs:
+  convert-svg:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Cache converted image files
+        id: cache-images
+        uses: actions/cache@v4
+        with:
+            path: out/images-converted-to-pdf
+            key: images-${{ hashFiles('manuscript/images/**/*.svg') }}
+
+## Alternative A:
+#      - name: Convert SVG files to PNG
+#        if: steps.cache-images.outputs.cache-hit != 'true'
+#        uses: hschwentner/fatpub-svg-convert@0.2
+#        with:
+# Alternative B:
+      - name: Install pdftops, and Inkscape
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            qpdf \
+            poppler-utils \
+            inkscape
+      - name: Install Draw.io
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get install -y libappindicator3-1 libnotify4 libsecret-1-0
+          wget --no-verbose https://github.com/jgraph/drawio-desktop/releases/download/v27.0.9/drawio-amd64-27.0.9.deb
+          sudo dpkg -i drawio-amd64-*.deb
+          sudo apt -y -f install
+      - name: Checkout conversion script
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        uses: actions/checkout@v5
+        with:
+            repository: hschwentner/fatpub-svg-convert
+            ref: v0.8           # alternatives: main v0.2
+            path: fatpub-svg-convert
+      - name: Install fonts for images
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp fonts/*.ttf ~/.local/share/fonts
+      - name: Convert SVG files to PDF
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: >
+          fatpub-svg-convert/bin/convert-svg-files \
+            --output-directory out/images-converted-to-pdf \
+            --output-format pdf \
+            --pdf-version 1.5 \
+            --dpi 900 \
+            --parallel false \
+            manuscript/images
+      - name: Convert SVG files to PNG for e-book or for embedding in DOCX
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: >
+          fatpub-svg-convert/bin/convert-svg-files \
+            --output-directory out/images-converted-to-png \
+            --output-format png \
+            --dpi 300 \
+            --parallel false \
+            manuscript/images
+#      - name: Convert SVG files to EPS for publisher
+#        if: steps.cache-images.outputs.cache-hit != 'true'
+#        run: >
+#          fatpub-svg-convert/bin/convert-svg-files \
+#            --output-directory out/images-converted-to-eps \
+#            --output-format eps \
+#            --dpi 900 \
+#            --parallel false \
+#            manuscript/images-converted-to-eps
+#############
+
+      - name: Push to O'Reilly Atlas
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          CLONE_DIR=$(mktemp -d)
+
+          git config --global user.email "henning.schwentner@wps.de"
+          git config --global user.name "HS via GitHub Actions"
+          git clone --single-branch --branch main "https://oauth2:${{ secrets.ATLAS_ACCESS }}@git.atlas.oreilly.com/oreillymedia/domain-driven-transformation" "${CLONE_DIR}"
+
+          rm -r "${CLONE_DIR}/"images-converted-to-pdf
+          cp -r out/images-converted-to-pdf "${CLONE_DIR}/"
+          rm -r "${CLONE_DIR}/"images-converted-to-png
+          cp -r out/images-converted-to-png "${CLONE_DIR}/"
+
+          cd "${CLONE_DIR}"
+          git add .
+          git commit -m "SVG CONVERSION: ${{ github.event.head_commit.message }}"
+          git -c color.ui=always diff @{u}..
+          git push --dry-run
+        #   git push

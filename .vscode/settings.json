@@ -1,0 +1,12 @@
+{
+    "cSpell.language": ",en",
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder}/.cspell/dictionary.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    },
+    "markdown.preview.fontFamily": "'Minion Pro', serif",
+}

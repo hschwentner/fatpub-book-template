@@ -1,0 +1,192 @@
+name: Generate book as DOCX
+on:
+  - workflow_dispatch
+
+jobs:
+  build-docx:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - run:
+          mkdir out
+
+
+####### SVG conversion
+      - name: Cache converted image files
+        id: cache-images
+        uses: actions/cache@v4
+        with:
+            path: tmp/images
+            key: images-${{ hashFiles('manuscript/images/**/*.svg') }}
+
+## Alternative A:
+#      - name: Convert SVG files to PNG
+#        if: steps.cache-images.outputs.cache-hit != 'true'
+#        uses: hschwentner/fatpub-svg-convert@0.2
+#        with:
+# Alternative B:
+      - name: Install pdftops, and Inkscape
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            qpdf \
+            poppler-utils \
+            inkscape
+      - name: Install Draw.io
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get install -y libappindicator3-1 libnotify4 libsecret-1-0
+          wget --no-verbose https://github.com/jgraph/drawio-desktop/releases/download/v29.0.3/drawio-amd64-29.0.3.deb
+          sudo dpkg -i drawio-amd64-*.deb
+          sudo apt -y -f install
+      - name: Checkout conversion script
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        uses: actions/checkout@v5
+        with:
+            repository: hschwentner/fatpub-svg-convert
+            ref: v0.6           # alternatives: main v0.2
+            path: fatpub-svg-convert
+      - name: Install fonts for images
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp fonts/*.ttf ~/.local/share/fonts
+      - name: Convert SVG files to PNG for embedding in DOCX
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        run: >
+          fatpub-svg-convert/bin/convert-svg-files \
+            --output-directory tmp/images \
+            --output-format png \
+            --dpi 300 \
+            --parallel false \
+            manuscript/images
+#      - name: Convert SVG files to EPS for publisher
+#        if: steps.cache-images.outputs.cache-hit != 'true'
+#        run: >
+#          fatpub-svg-convert/bin/convert-svg-files \
+#            --output-directory out/images/eps \
+#            --output-format eps \
+#            --dpi 900 \
+#            --parallel false \
+#            manuscript/images
+#############
+
+
+# 1. Frontmatter
+      - name: Generate frontmatter
+        run: >
+          cat `cat manuscript/book-1-frontmatter.txt |
+            sed -E 's|^(.)|manuscript/\1|'` > out/ddt-1-front-markua.md
+      - uses: hschwentner/fatpub@v1.20   # alternative: v1.8 fatpub@main
+        with:
+          template: ptg_awph02
+          in: out/ddt-1-front-markua.md
+          out: out/ddt-1-front-ptg_awph02.md
+          single-file: true
+#############
+      - name: Use PNG files
+        run: >
+          sed \
+            -E "s/\]\((.*)\.svg\)/\]\(tmp\/\1.svg.png\)/g" \
+            out/ddt-1-front-ptg_awph02.md \
+            > out/ddt-1-front-ptg_awph02-png.md
+#############
+      - uses: docker://pandoc/core:3.6.4
+        with:
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=docx
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata.yaml
+            --reference-doc=templates/ptg_awph02_fm.docx
+            --filter=pandoc-crossref
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-henning
+            --lua-filter=lib/newpage.lua
+            --output out/domain-driven-transformation-1-frontmatter.docx
+            out/ddt-1-front-ptg_awph02-png.md
+
+# 2. Mainmatter
+      - name: Generate mainmatter
+        run: >
+          cat `cat manuscript/book-2-mainmatter.txt |
+            sed -E 's|^(.)|manuscript/\1|'` > out/ddt-2-main-markua.md
+      - uses: hschwentner/fatpub@v1.20   # alternative: v1.8 fatpub@main
+        with:
+          template: ptg_awph02
+          in: out/ddt-2-main-markua.md
+          out: out/ddt-2-main-ptg_awph02.md
+          single-file: true
+#############
+      - name: Use PNG files
+        run: >
+          sed \
+            -E "s/\]\((.*)\.svg\)/\]\(tmp\/\1.svg.png\)/g" \
+            out/ddt-2-main-ptg_awph02.md \
+            > out/ddt-2-main-ptg_awph02-png.md
+#############
+      - uses: docker://pandoc/core:3.6.4
+        with:
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=docx
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata.yaml
+            --reference-doc=templates/ptg_awph02_main.docx
+            --filter=pandoc-crossref
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-henning
+            --lua-filter=lib/newpage.lua
+            --output out/domain-driven-transformation-2-mainmatter.docx
+            out/ddt-2-main-ptg_awph02-png.md
+
+# 3. Backmatter
+      - name: Generate backmatter
+        run: >
+          cat `cat manuscript/book-2-mainmatter.txt |
+            sed -E 's|^(.)|manuscript/\1|'` > out/ddt-3-back-markua.md
+      - uses: hschwentner/fatpub@v1.20   # alternative: v1.8 fatpub@main
+        with:
+          template: ptg_awph02
+          in: out/ddt-3-back-markua.md
+          out: out/ddt-3-back-ptg_awph02.md
+          single-file: true
+#############
+      - name: Use PNG files
+        run: >
+          sed \
+            -E "s/\]\((.*)\.svg\)/\]\(tmp\/\1.svg.png\)/g" \
+            out/ddt-3-back-ptg_awph02.md \
+            > out/ddt-3-back-ptg_awph02-png.md
+#############
+      - uses: docker://pandoc/core:3.6.4
+        with:
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=docx
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata.yaml
+            --reference-doc=templates/ptg_awph02_rm.docx
+            --filter=pandoc-crossref
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-henning
+            --lua-filter=lib/ptg_awph02.lua
+            --output out/domain-driven-transformation-3-backmatter.docx
+            out/ddt-3-back-ptg_awph02-png.md
+
+#            --lua-filter=lib/newpage.lua
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: domain-driven-transformation
+          path: out/

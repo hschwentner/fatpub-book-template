@@ -1,0 +1,6 @@
+# Dictionary for the book
+Addison-Wesley
+Hoare
+Hofer
+Schwentner
+Züllighoven

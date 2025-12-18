@@ -1,0 +1,117 @@
+name: Generate book as Atlas Asciidoc
+on:
+  - workflow_dispatch
+  - push
+
+jobs:
+  build-atlas:
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - run:
+          mkdir out
+
+      - name: Replace .md with .asciidoc in atlas.json
+        run:
+            perl -pi -e 's{.md}{.asciidoc}g' manuscript/atlas.json
+
+# 1. Frontmatter
+      - name: Instead of Fatpub
+        run:
+          bin/preprocess-for-asciidoc manuscript/05-preface.md > out/05-preface_preprocessed.md
+      - uses: docker://pandoc/core:3.8.2
+        with:
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=asciidoc
+            --wrap=none
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata-preface.yaml
+            --lua-filter=lib/newpage.lua
+            --lua-filter=lib/pandoc-crossref-asciidoc.lua
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-henning
+            --output out/05-preface.asciidoc.tmp
+            out/05-preface_preprocessed.md
+      - name: Postprocess
+        run:
+          bin/postprocess-asciidoc out/05-preface.asciidoc.tmp > out/05-preface.asciidoc
+
+# 2. Mainmatter
+      - name: Generate mainmatter
+        run: >
+          awk 'FNR==1 && NR!=1 {print ""} {print}' $(cat cat manuscript/book-2-mainmatter.txt |
+            sed -E 's|^(.)|manuscript/\1|') > out/ddt-2-main-markua.md
+      - name: Instead of Fatpub
+        run:
+          bin/preprocess-for-asciidoc out/ddt-2-main-markua.md > out/ddt-2-main-markua-preprocessed.md
+#############
+    #   - name: Use PDF files
+    #     run: >
+    #       sed \
+    #         -E "s/\]\(images\/(.*)\.svg\)/\]\(images-converted-to-pdf\/\1.svg.pdf\)/g" \
+    #         out/ddt-2-main-markua-preprocessed.md \
+    #         > out/ddt-2-main-markua-pdf.md
+      - name: Use PNG files
+        run: >
+          sed \
+            -E "s/\]\(images\/(.*)\.svg\)/\]\(images-converted-to-png\/\1.svg.png\)/g" \
+            out/ddt-2-main-markua-preprocessed.md \
+            > out/ddt-2-main-markua-png.md
+#############
+      - uses: docker://pandoc/core:3.8.2
+        with:
+          args: >
+            --fail-if-warnings
+            --from=markdown
+            --to=asciidoc
+            --wrap=none
+            --resource-path=manuscript
+            --metadata-file=manuscript/book-metadata.yaml
+            --lua-filter=lib/newpage.lua
+            --lua-filter=lib/pandoc-crossref-asciidoc.lua
+            --citeproc
+            --bibliography=bibliography/bibliography.json
+            --csl=lib/chicago-author-date-henning
+            --output out/ddt-2-main-markua-png.asciidoc.tmp
+            out/ddt-2-main-markua-png.md
+      - name: Postprocess
+        run:
+          bin/postprocess-asciidoc out/ddt-2-main-markua-png.asciidoc.tmp > out/10-mainmatter.asciidoc.tmp
+      - name: Split into chapters
+        run: bin/split-into-chapters out/10-mainmatter.asciidoc.tmp out
+      - name: Replace split file names
+        run: bin/replace-split-file-names manuscript/atlas.json "10-mainmatter.asciidoc" out/filelist.txt "files"
+
+      - name: Push to O'Reilly Atlas
+        run: |
+          CLONE_DIR=$(mktemp -d)
+
+          git config --global user.email "henning.schwentner@wps.de"
+          git config --global user.name "HS via GitHub Actions"
+          git clone --single-branch --branch main "https://oauth2:${{ secrets.ATLAS_ACCESS }}@git.atlas.oreilly.com/oreillymedia/domain-driven-transformation" "${CLONE_DIR}"
+
+          cp manuscript/atlas.json "${CLONE_DIR}/"
+          rm "${CLONE_DIR}/"*.html
+          cp manuscript/*.html "${CLONE_DIR}/"
+          rm "${CLONE_DIR}/"*.asciidoc
+          cp manuscript/*.asciidoc "${CLONE_DIR}/"
+          cp out/*.asciidoc "${CLONE_DIR}/"
+          [ -e "${CLONE_DIR}/"images/.gitkeep] && mv "${CLONE_DIR}/"images/.gitkeep manuscript/images/
+          rm -r "${CLONE_DIR}/"images
+          cp -r manuscript/images "${CLONE_DIR}/"
+          mv "${CLONE_DIR}/"icons/.gitkeep manuscript/icons/
+          rm -r "${CLONE_DIR}/"icons
+          cp -r manuscript/icons "${CLONE_DIR}/"
+
+          cd "${CLONE_DIR}"
+          git add .
+          git commit -m "ASCIIDOC CONVERSION: ${{ github.event.head_commit.message }}"
+          git -c color.ui=always diff @{u}..
+          git push --dry-run
+        #   git push
