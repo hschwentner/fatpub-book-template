@@ -1,4 +1,4 @@
-name: Generate book as DOCX
+name: Generate book as dpunkt style DOCX
 on:
   - workflow_dispatch
   - push
