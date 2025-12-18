@@ -52,7 +52,7 @@ Listing: A code example {#lst:code-example}
 
 Different formatting for tables is possible; see e.g. [@tbl:example-table].
 
-Table 1.1: Essential and accidental complexity {#tbl:example-table}
+Table: Essential and accidental complexity {#tbl:example-table}
 
 |        | Essential                  | Accidental                         |
 |--------|----------------------------|------------------------------------|
